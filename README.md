@@ -8,60 +8,59 @@
 
 This library contains the most of tools that we use on Android development. Just add this to your module, you could simplify　your code, save your valuable time, and make developing app easier. Enjoy tools, happy coding!
 
-## How to use AndroidTools
 
-### 1.Add it in your root build.gradle at the end of repositories:
+## Core Utilities
 
-    allprojects {
-		  repositories {
-			  ...
-			  maven { url 'https://jitpack.io' }
-		  }
-	  }
-    
-### 2.Add this to your module's build.gradle file:
+DroidOdu provides utilities for the following categories:
 
-    dependencies {
-	        compile 'com.github.mazouri:AndroidTools:1.0'
-	  }
-    
-### 3.Initiate AndroidTools in your application class:
+### App & Device Utilities
 
-    public class YourApplication extends Application {
+- `DroidOdu.app()` - Application-related utilities
+- `DroidOdu.device()` - Device information and system features
+- `DroidOdu.screen()` - Screen dimensions and properties
 
-      @Override
-      public void onCreate() {
-          super.onCreate();
+### UI Utilities
 
-          //[Required]
-          Tools.init(this); 
-          
-          //[Optional] if u wanna see AndroidTools internal logs, add this line.
-          Tools.openToolsLog(true); 
-      }
-    }
-    
+- `DroidOdu.toast()` - Simplified Toast creation
+- `DroidOdu.snackbar()` - Enhanced Snackbar functionality
+- `DroidOdu.dialog()` - Common dialog patterns
+- `DroidOdu.input()` - Input method and keyboard utilities
 
-### 4.Then U could use tools that u want like this:
+### Storage Utilities
 
-    // print log with tag.
-    Tools.log().tag(App.class.getSimpleName()).d("print log with tag()"); 
-    
-    // is null or its length is 0. [will return false]
-    Tools.string().isEmpty(App.class.getSimpleName()); 
-    
-    // is wifi connected? [will return true||false]
-    Tools.network().isWifiConnected(this);  
-    
-## Screenshots [tobeupdate]
+- `DroidOdu.file()` - File operations
+- `DroidOdu.storage()` - External storage utilities
+- `DroidOdu.prefs()` - SharedPreferences wrapper
 
-<img src="./screenshot/device_info.gif">
+### Network & I/O Utilities
 
-## Classify tools [tobeupdate]
+- `DroidOdu.network()` - Network connectivity and information
+- `DroidOdu.http()` - HTTP request utilities
+- `DroidOdu.close()` - I/O closing utilities
 
-**You can also query by **docs****.
+### Image & Media Utilities
 
-I believe you could get the meaning of these methods by their name, so I will not translate the desc into English. Enjoy Tools!
+- `DroidOdu.bitmap()` - Bitmap manipulation
+- `DroidOdu.image()` - Image loading and processing
+- `DroidOdu.media()` - Media file utilities
+
+### Data Utilities
+
+- `DroidOdu.convert()` - Data type conversion
+- `DroidOdu.format()` - Formatters for various data types
+- `DroidOdu.validate()` - Data validation utilities
+
+### Security Utilities
+
+- `DroidOdu.crypto()` - Cryptography utilities
+- `DroidOdu.secure()` - Security-related functions
+- `DroidOdu.permission()` - Runtime permission helpers
+
+### Logging & Debugging
+
+- `DroidOdu.log()` - Enhanced logging
+- `DroidOdu.debug()` - Debugging helpers
+- `DroidOdu.crash()` - Crash handling utilities
 
 ### Tools
 
