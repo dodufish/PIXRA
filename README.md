@@ -8,51 +8,52 @@
 
 This library contains the most of tools that we use on Android development. Just add this to your module, you could simplify　your code, save your valuable time, and make developing app easier. Enjoy tools, happy coding!
 
-## How to use AndroidTools
 
-### 1.Add it in your root build.gradle at the end of repositories:
+## Installation
 
-    allprojects {
-		  repositories {
-			  ...
-			  maven { url 'https://jitpack.io' }
-		  }
-	  }
-    
-### 2.Add this to your module's build.gradle file:
+### Step 1: Add JitPack repository
 
-    dependencies {
-	        compile 'com.github.mazouri:AndroidTools:1.0'
-	  }
-    
-### 3.Initiate AndroidTools in your application class:
+Add the JitPack repository to your root `build.gradle` file:
 
-    public class YourApplication extends Application {
-
-      @Override
-      public void onCreate() {
-          super.onCreate();
-
-          //[Required]
-          Tools.init(this); 
-          
-          //[Optional] if u wanna see AndroidTools internal logs, add this line.
-          Tools.openToolsLog(true); 
-      }
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
     }
-    
+}
+```
 
-### 4.Then U could use tools that u want like this:
+### Step 2: Add the dependency
 
-    // print log with tag.
-    Tools.log().tag(App.class.getSimpleName()).d("print log with tag()"); 
-    
-    // is null or its length is 0. [will return false]
-    Tools.string().isEmpty(App.class.getSimpleName()); 
-    
-    // is wifi connected? [will return true||false]
-    Tools.network().isWifiConnected(this);  
-    
+Add the dependency to your app's `build.gradle` file:
+
+```gradle
+dependencies {
+    implementation 'com.github.dodufish:droidodu:1.2.3' // Replace with the latest version
+}
+```
+
+### Step 3: Initialize DroidOdu
+
+Initialize DroidOdu in your Application class:
+
+```java
+public class YourApplication extends Application {
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        
+        // Required initialization
+        DroidOdu.init(this);
+        
+        // Optional: Enable debug logging
+        DroidOdu.setDebugLogging(true);
+    }
+}
+```
+
+
 ## Screenshots [tobeupdate]
 
 <img src="./screenshot/device_info.gif">
