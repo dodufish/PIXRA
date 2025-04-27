@@ -8,6 +8,14 @@
 
 This library contains the most of tools that we use on Android development. Just add this to your module, you could simplify　your code, save your valuable time, and make developing app easier. Enjoy tools, happy coding!
 
+## Features
+
+- **Modular Design**: Organized into focused categories for easy navigation
+- **Lightweight**: Minimal impact on your app's size
+- **Fully Documented**: Comprehensive documentation for all utility functions
+- **Easy Integration**: Simple setup with Gradle
+- **Actively Maintained**: Regular updates and improvements
+
 ## How to use AndroidTools
 
 ### 1.Add it in your root build.gradle at the end of repositories:
