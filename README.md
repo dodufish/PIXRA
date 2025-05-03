@@ -1,5 +1,5 @@
 # Introduction
-Upsonic is a reliability-focused framework designed for real-world applications. It enables trusted agent workflows in your organization through advanced reliability features, including verification layers, triangular architecture, validator agents, and output evaluation systems.
+PIXRA is a reliability-focused framework designed for real-world applications. It enables trusted agent workflows in your organization through advanced reliability features, including verification layers, triangular architecture, validator agents, and output evaluation systems.
 
 # Why Choose PIXRA?
 PIXRA is a next-generation framework that makes agents production-ready by solving three critical challenges:
@@ -12,7 +12,6 @@ PIXRA is a next-generation framework that makes agents production-ready by solvi
 
 4- **Secure Runtime**: Isolated environment to run agents
 
-![sdk-server](https://github.com/dodufish/PIXRA)
 
 <br>
 
@@ -80,7 +79,7 @@ You can access our documentation at [PIXRA](https://github.com/dodufish/PIXRA) A
 ## Installation
 
 ```bash
-pip install upsonic
+pip install pixra
 
 ```
 
